@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  font-family: "Manrope", sans-serif;
+  margin: auto;
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(218, 23%, 16%);
+}
+
+box_container {
+  border-radius: 15px;
+  width: 450px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: hsl(217, 19%, 24%);
+  padding: 25px;
+  position: relative;
+}
+
+box_container > img:nth-child(3) {
+  margin: 25px auto 50px auto;
+}
+
+box_container > img:nth-child(4) {
+  display: none;
+}
+
+button {
+  display: block;
+  padding: 20px;
+  border-radius: 50%;
+  border: unset;
+  cursor: pointer;
+  position: absolute;
+  bottom: -35px;
+  right: 220px;
+  text-align: center;
+  background-color: hsl(150, 100%, 66%);
+}
+
+h1 {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  font-size: 0.7em;
+}
+
+button > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+box_container > button:hover {
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 20px 5px hsl(150, 100%, 66%);
+}
+
+@media all and (max-width: 700px) {
+  box_container {
+    width: 80%;
+  }
+  box_container > img:nth-child(3) {
+    display: none;
+  }
+  box_container > img:nth-child(4) {
+    display: block;
+    margin: 25px auto 50px auto;
+  }
+  button {
+    right: 40%;
+  }
+}
